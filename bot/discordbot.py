@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import os
-from os import getenv
+from dotenv import load_dotenv
 import traceback
 import math
 import random
@@ -270,5 +270,6 @@ async def on_message(message):
     if message.content.startswith('getcid'):
         await message.channel.send(str(message.channel) + "\n" + str(message.channel.id))
 
+load_dotenv('.env')
 token = os.getenv("DISCORD_BOT_TOKEN", "")
 bot.run(token)
