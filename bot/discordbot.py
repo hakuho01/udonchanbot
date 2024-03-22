@@ -129,7 +129,7 @@ async def on_message(message):
             
             # ギルドIDは当BOTのgetgidコマンドで取得可能
             # 探検同盟
-            if message.guild.id == 612729411271131141:
+            if message.guild.id == 1212306629043814400:
                 # コメント先チャンネルIDの指定
                 # チャンネルIDは当BOTのgetcidコマンドで取得可能
                 # クラバト進行
@@ -139,19 +139,19 @@ async def on_message(message):
  
                 if val[1] == "1":
                     # 1ボス
-                    CHANNEL_ID = 958748322745696307
+                    CHANNEL_ID = 1212306629882810410
                 elif val[1] == "2":
                     # 2ボス
-                    CHANNEL_ID = 958748357029924944
+                    CHANNEL_ID = 1212306629882810411
                 elif val[1] == "3":
                     # 3ボス
-                    CHANNEL_ID = 958748390932484166
+                    CHANNEL_ID = 1212306629882810412
                 elif val[1] == "4":
                     # 4ボス
-                    CHANNEL_ID = 958748429385887814
+                    CHANNEL_ID = 1212306629882810413
                 elif val[1] == "5":
                     # 5ボス
-                    CHANNEL_ID = 958748475196051487
+                    CHANNEL_ID = 1212306629882810414
                 else:
                     # ボス番号が1～5以外の場合、チャンネルID=0としてエラーにする
                     CHANNEL_ID = 0
@@ -160,13 +160,13 @@ async def on_message(message):
                 # 尚メンションが跳んでしまうので注意。
 
                 # 探検同盟ロールの指定
-                ROLE_ID = "<@&616659743632785418>"
+                ROLE_ID = "<@&1212306629081440259>"
                 #ROLE_ID = ""
 
-            # 自鯖（デバッグ用）
-            elif message.guild.id == 937937525517975652:
-                CHANNEL_ID = 948144372631867442
-                ROLE_ID = "<@&948591399111098429>"
+            # 自鯖（デバッグ用、白鳳鯖）
+            elif message.guild.id == 673867780956618753:
+                CHANNEL_ID = 725471441260118097
+                ROLE_ID = "<@&729636032256933959>"
                 #ROLE_ID = ""
 
             # チャンネルIDが0でなければメンションを飛ばす
